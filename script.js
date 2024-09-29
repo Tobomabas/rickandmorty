@@ -9,6 +9,7 @@ let filterStatus = "";
 
 async function loadItems() {
   try {
+    filterName = filterIinput.value.trim();
     const response = await fetch(
       `https://rickandmortyapi.com/api/character/?page=${page}&name=${filterName}&status=${filterStatus}`
     );
@@ -56,8 +57,7 @@ function prevPage() {
   }
 }
 
-filterIinput.addEventListener("input", (event) => {
-  filterName = event.target.value;
+filterIinput.addEventListener("input", () => {
   loadItems();
 });
 
