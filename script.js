@@ -1,5 +1,5 @@
 const cardContainer = document.getElementById("main-wrapper");
-const filterIinput = document.getElementById("filterByNameInput");
+const filterIinput = document.getElementById("filter-by-name-input");
 const selectStatus = document.querySelectorAll('input[name="select"]');
 let maxPages;
 let page = 1;

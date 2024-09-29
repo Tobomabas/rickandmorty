@@ -26,6 +26,9 @@ header {
   justify-content: center;
   align-items: center;
 }
+#filter-by-name-input {
+  height: 30px;
+}
 #main-wrapper {
   display: flex;
   width: 90%;
