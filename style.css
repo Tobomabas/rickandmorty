@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 16px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  --default-card-color: rgb(255, 255, 255);
+  --default-bg-color: rgb(199, 199, 199);
+}
+body {
+  max-width: 1920px;
+  min-width: 400px;
+  margin: 0 auto;
+  background-color: var(--default-bg-color);
+}
+header {
+  padding-top: 0.5rem;
+  width: 1920px;
+}
+#filter-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main-wrapper {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  height: 280px;
+  width: 200px;
+  border: none;
+  margin: 10px;
+  background-color: var(--default-card-color);
+  border-radius: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card img {
+  padding-top: 10px;
+  width: 180px;
+  height: 140px;
+  border-radius: 10px;
+}
+.card-name {
+  font-size: 1rem;
+  padding: 20px 10px;
+}
+#statgat-container {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+}
+.statgat {
+  padding-top: 20px;
+  padding-left: 10px;
+  text-align: left;
+  width: 180px;
+  align-self: stretch;
+}
+#pagin {
+  display: flex;
+  margin: 0 auto;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

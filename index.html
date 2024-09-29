@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="filter-container">
+        <form id="select-status">
+          Filtry:
+          <input
+            id="filterByNameInput"
+            type="text"
+            placeholder="Wyszukaj po nazwie"
+          />
+          <input type="radio" id="alive" name="select" value="alive" />
+          <label for="alive">Zywy</label>
+          <input type="radio" id="dead" name="select" value="dead" />
+          <label for="dead">Martwy</label>
+          <input type="radio" id="unknown" name="select" value="unknown" />
+          <label for="unknown">Nieznany</label>
+        </form>
+      </div>
+    </header>
+    <main>
+      <div id="main-wrapper"></div>
+      <div id="pagin">
+        <button onclick="prevPage()" id="leftArr">Prev Page</button>
+        <button onclick="nextPage()" id="rightArr">Next Page</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
