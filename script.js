@@ -1,7 +1,6 @@
 const cardContainer = document.getElementById("main-wrapper");
 const filterIinput = document.getElementById("filterByNameInput");
 const selectStatus = document.querySelectorAll('input[name="select"]');
-
 let maxPages;
 let page = 1;
 let items = [];
